@@ -4,7 +4,7 @@ public class oneAway {
 public static void main(String args[])
 {
 	String str1 = "geek";
-	String str2 = "geeksss";
+	String str2 = "geeks";
 	int strlen1 = str1.length();
 	int strlen2 = str2.length();
 	int i =0, j=0, flag =0;

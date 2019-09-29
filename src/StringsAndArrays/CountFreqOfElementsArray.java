@@ -9,7 +9,7 @@ public class CountFreqOfElementsArray {
 		int[] arr = new int[] {1, 2, 5, 2, 2};
 		printFreq(arr, 7);
 		Stack<Integer> s = new Stack<>();
-		s.
+		
 	}
 	
 	private static void printFreq(int[] arr, int n) {
