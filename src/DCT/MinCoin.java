@@ -1,9 +1,11 @@
 package DCT;
 
 import java.util.Arrays;
+import java.util.Hashtable;
 
 public class MinCoin {
 	
+	static Hashtable<String,Integer> ht = new Hashtable<>();
 	static int coins[] = {5,2,1};
 	static int value = 11;
 
@@ -15,7 +17,7 @@ public class MinCoin {
 	public static int getMinCoin(int[] remCoins, int remVal) {
 		
 		//System.out.println("remCoins="+Arrays.toString(remCoins)+" remVal="+remVal+" currCount="+currCount);
-		
+		System.out.println(remCoins.length+" "+remVal);
 		if (remVal == 0) { return 0; }
 		
 		if (remCoins.length == 0) { return 0; }

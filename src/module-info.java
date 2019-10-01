@@ -6,4 +6,5 @@
  *
  */
 module DSAI {
+	requires java.base;
 }
