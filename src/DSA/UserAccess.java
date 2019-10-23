@@ -5,14 +5,15 @@ import java.util.Hashtable;
 public class UserAccess {
 	static Hashtable<String, User> users = new Hashtable();
 	public static void main(String args[]) {
-		User user1 = createUser();
+		UserAccess obj = new UserAccess();
+		User user1 = obj.createUser();
 		addUser(user1);
 		User getUser1 = getUser("komal@gmail.com", "1234");
 		getUser1.printUser();
 	}
 	
-	static User createUser() {
-		User user = new User();
+	public User createUser() {
+		User user = this.new User();
 		user.firstName = "Komal";
 		user.lastName = "Vohra";
 		user.email = "komal@gmail.com";

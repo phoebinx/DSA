@@ -28,7 +28,7 @@ transform each row of source to required column of final image
 public class RotateMatrix {
 	public static void main(String args[])
 	{
-		System.out.println(sizeOf(int));
+		//System.out.println(sizeOf(int));
 	}
 }
 
@@ -41,59 +41,59 @@ public class RotateMatrix {
 //if an element is fo
 
 
-package StringsAndArrays;
-
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class ZeroMatrix {
-public static void main(String args[])
-{
-	int [][] matrix  ={{1,0,0},{2,3,1},{3,5,5}}; 
-	int [][] matrix1  ={{1,0,0},{2,3,1},{3,5,5}}; 
-	List<Integer> arrRow = new ArrayList<Integer>();
-	List<Integer> arrColumn = new ArrayList<Integer>();
-	for(int i = 0; i <matrix.length; i++)
-	{
-		for(int j = 0; j<matrix[i].length; j++)
-		{
-			if(matrix1[i][j] == 0)
-			{
-				if(!arrRow.contains(i))
-				{
-				arrRow.add(i);
-				//for row i, make all columns 0
-				int y =matrix[i].length-1;
-				while(y>=0)
-				{
-					matrix[i][y]=0;
-					y--;
-				}
-				}
-				if(!arrColumn.contains(j))
-				{
-				//for column j, make all rows 0
-				arrColumn.add(j);
-				int x = matrix.length-1;
-				while (x>=0)
-				{
-					matrix[x][j]=0;
-					x--;
-				}
-			}
-			}
-		}
-	}
-
-//print array
-for(int i = 0; i <matrix.length; i++)
-{
-	for(int j = 0; j<matrix[i].length; j++)
-	{
-		System.out.print(matrix[i][j]);
-	}
-	System.out.println();
-}
-}
-}
+//package StringsAndArrays;
+//
+//
+//import java.util.ArrayList;
+//import java.util.List;
+//
+//public class ZeroMatrix {
+//public static void main(String args[])
+//{
+//	int [][] matrix  ={{1,0,0},{2,3,1},{3,5,5}}; 
+//	int [][] matrix1  ={{1,0,0},{2,3,1},{3,5,5}}; 
+//	List<Integer> arrRow = new ArrayList<Integer>();
+//	List<Integer> arrColumn = new ArrayList<Integer>();
+//	for(int i = 0; i <matrix.length; i++)
+//	{
+//		for(int j = 0; j<matrix[i].length; j++)
+//		{
+//			if(matrix1[i][j] == 0)
+//			{
+//				if(!arrRow.contains(i))
+//				{
+//				arrRow.add(i);
+//				//for row i, make all columns 0
+//				int y =matrix[i].length-1;
+//				while(y>=0)
+//				{
+//					matrix[i][y]=0;
+//					y--;
+//				}
+//				}
+//				if(!arrColumn.contains(j))
+//				{
+//				//for column j, make all rows 0
+//				arrColumn.add(j);
+//				int x = matrix.length-1;
+//				while (x>=0)
+//				{
+//					matrix[x][j]=0;
+//					x--;
+//				}
+//			}
+//			}
+//		}
+//	}
+//
+////print array
+//for(int i = 0; i <matrix.length; i++)
+//{
+//	for(int j = 0; j<matrix[i].length; j++)
+//	{
+//		System.out.print(matrix[i][j]);
+//	}
+//	System.out.println();
+//}
+//}
+//}

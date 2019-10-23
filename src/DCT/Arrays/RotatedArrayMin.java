@@ -25,8 +25,12 @@ public class RotatedArrayMin {
 		return minElement(arr, mid+1, high);
 	}
 }
-
-//The minimum element is the only element whose previous is greater than it. If there is no previous element element, then there is no rotation (first element is minimum). We check this condition for middle element by comparing it with (mid-1)’th and (mid+1)’th elements.
-//If minimum element is not at middle (neither mid nor mid + 1), then minimum element lies in either left half or right half.
+//https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+//The minimum element is the only element whose previous is greater than it. 
+//If there is no previous element element, then there is no rotation (first element is 
+//minimum). We check this condition for middle element by comparing it with (mid-1)’th and 
+//(mid+1)’th elements.
+//If minimum element is not at middle (neither mid nor mid + 1), then minimum element lies in 
+//either left half or right half.
 //If middle element is smaller than last element, then the minimum element lies in left half
 //Else minimum element lies in right half.

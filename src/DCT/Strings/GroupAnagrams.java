@@ -23,7 +23,9 @@ public class GroupAnagrams {
 			char charSet[] = new char[26];
 			for (int i =0;i<str.length();i++) {
 				charSet[str.charAt(i)-'a']++;
+				System.out.println(charSet[str.charAt(i)-'a']);
 			}
+			
 			String keyStr = new String(charSet);
 			if (hm.containsKey(keyStr)) {
 				hm.get(keyStr).add(str);
