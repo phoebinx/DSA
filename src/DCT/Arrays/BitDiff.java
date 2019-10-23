@@ -46,7 +46,10 @@ public class BitDiff {
 //this is because as per Combination formula countC1 = count and n-countC1 = n-count, combination is
 //count*(n-count) and since (1,3) and (3,1 ) are considerd seperate for sum, we multiply by 2
 
-//
+
+//In order to find if a particular bit is 1 or 0 we bitwise or it with 1 but 1 leftshifted to that bit 
+//so if the bit is 1, 1&1 = 1 else 0, left shift if move to left and add 0 on right.
+
 //* Int is 4byte which is 32 bit
 //* Long is 8byte which 64 bit so if you want to do the bit diff question for long, run loop for 64.
 //* Float is 4byte like it but double is 8byte like long
